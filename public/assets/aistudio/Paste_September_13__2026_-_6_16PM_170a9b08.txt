@@ -1,0 +1,3052 @@
+You are a senior full-stack developer, UI/UX designer, e-commerce architect, Firebase developer, and premium footwear-commerce designer.
+
+Build a complete, production-ready e-commerce website for:
+
+============================================================
+BUSINESS IDENTITY
+============================================================
+
+BUSINESS NAME:
+
+AL-HALAL A FOOT STATION
+
+BRAND / SOCIAL IDENTITY:
+
+alhalalfoot_truck
+
+BUSINESS TYPE:
+
+Footwear showroom and retail store.
+
+BUSINESS POSITIONING:
+
+A modern footwear showroom offering a wide variety of footwear and lifestyle styles for customers.
+
+The uploaded reference images are the PRIMARY visual references for this website.
+
+The references show:
+
+- AL-HALAL A FOOT STATION storefront
+- Interior footwear displays
+- Large wall-mounted footwear shelves
+- Casual footwear
+- Sports shoes
+- Sandals
+- Clogs / slip-on footwear
+- Men's footwear
+- Lifestyle footwear
+- Store counter
+- Modern showroom environment
+- AL-HALAL branding
+
+Do NOT copy the Instagram interface.
+
+Create a standalone professional e-commerce website inspired by the actual store.
+
+============================================================
+1. BUSINESS CONTACT INFORMATION
+============================================================
+
+Use the following contact numbers visible in the provided reference:
+
++91 9655187000
++91 97875 36452
+
+Social identity:
+
+Instagram:
+alhalalfoot_truck
+
+YouTube:
+Use a configurable YouTube URL rather than inventing one.
+
+IMPORTANT:
+
+Do not invent:
+- Exact street address
+- Exact business hours
+- Fake awards
+- Fake certifications
+- Fake customer counts
+- Fake number of years in business
+- Fake reviews
+- Fake claims about authenticity
+
+If information is not provided, make it configurable through the admin dashboard.
+
+============================================================
+2. TECHNOLOGY STACK
+============================================================
+
+Use:
+
+FRONTEND:
+React
+Tailwind CSS
+JavaScript
+Lucide React Icons
+
+BACKEND:
+Firebase
+
+Use:
+
+Firebase Authentication
+Firebase Firestore
+Firebase Storage
+
+Optional:
+Firebase Hosting
+
+Use a clean component-based architecture.
+
+The project must be maintainable and scalable.
+
+============================================================
+3. BRAND VISUAL SYSTEM
+============================================================
+
+Analyze the uploaded storefront, interior and Instagram references before designing the UI.
+
+The visual identity should feel:
+
+Modern
+Clean
+Premium
+Sporty
+Minimal
+Urban
+Footwear-focused
+Trustworthy
+
+PRIMARY COLORS:
+
+Black:
+#000000
+
+White:
+#FFFFFF
+
+Charcoal:
+#111111
+
+Dark Gray:
+#1F1F1F
+
+Light Gray:
+#F5F5F5
+
+Medium Gray:
+#737373
+
+Use black and white as the primary visual system.
+
+Use a very subtle warm neutral accent where appropriate.
+
+Do NOT create a colorful children's footwear website.
+
+Do NOT overuse gradients.
+
+Do NOT use excessive gold.
+
+Do NOT use bright blue/purple/pink unless an actual product image requires those colors.
+
+Product colors should come from the actual product photographs.
+
+============================================================
+4. TYPOGRAPHY
+============================================================
+
+Use a modern clean font.
+
+Primary:
+Inter
+
+Use strong bold typography for:
+
+AL-HALAL A FOOT STATION
+
+Headings
+
+Product names
+
+Prices
+
+CTA buttons
+
+Use smaller clean typography for:
+
+Specifications
+Descriptions
+Filters
+Metadata
+
+The typography should feel like a premium sneaker/footwear store.
+
+============================================================
+5. WEBSITE EXPERIENCE
+============================================================
+
+The website should feel like entering the physical AL-HALAL A FOOT STATION showroom digitally.
+
+Customer flow:
+
+HOME
+↓
+CATEGORY
+↓
+PRODUCT COLLECTION
+↓
+PRODUCT DETAILS
+↓
+SELECT SIZE
+↓
+SELECT COLOR
+↓
+CHECK STOCK
+↓
+ADD TO CART
+↓
+CHECKOUT
+↓
+ORDER CONFIRMATION
+
+The website must be easy to use for customers on mobile.
+
+============================================================
+6. WEBSITE PAGES
+============================================================
+
+Create:
+
+1. Home
+2. Shop
+3. Men's Footwear
+4. Sports Shoes
+5. Casual Footwear
+6. Sandals
+7. Clogs / Slip-ons
+8. New Arrivals
+9. Offers
+10. Product Details
+11. Search Results
+12. Cart
+13. Checkout
+14. Wishlist
+15. Customer Account
+16. My Orders
+17. About
+18. Contact
+19. Store
+20. Admin Login
+21. Admin Dashboard
+
+============================================================
+7. TOP ANNOUNCEMENT BAR
+============================================================
+
+At the top of the website create a slim announcement bar.
+
+Possible content:
+
+"AL-HALAL A FOOT STATION • FOOTWEAR • STYLE • EVERYDAY COMFORT"
+
+Keep the text short.
+
+Allow this message to be controlled through Firestore settings.
+
+Admin should be able to change it later.
+
+============================================================
+8. HEADER
+============================================================
+
+Create a premium sticky header.
+
+LEFT:
+
+AL-HALAL A FOOT STATION logo/wordmark.
+
+CENTER:
+
+Home
+Shop
+Men
+Sports
+Casual
+Sandals
+New Arrivals
+Offers
+
+RIGHT:
+
+Search
+Wishlist
+Account
+Cart
+
+Cart should show live item count.
+
+Wishlist should show live count.
+
+On scroll:
+
+Header becomes slightly smaller.
+
+Add subtle shadow.
+
+Keep navigation accessible.
+
+============================================================
+9. MOBILE HEADER
+============================================================
+
+On mobile:
+
+Logo
+Search
+Cart
+Hamburger
+
+Hamburger opens:
+
+Home
+Shop
+Men
+Sports
+Casual
+Sandals
+New Arrivals
+Offers
+About
+Contact
+
+Use a smooth slide-in menu.
+
+Do not make the menu excessively animated.
+
+============================================================
+10. HERO SECTION
+============================================================
+
+Create a premium footwear hero section.
+
+Main headline:
+
+"STEP INTO YOUR STYLE"
+
+Supporting text:
+
+"Discover footwear for everyday comfort, street style and active lifestyles."
+
+Primary button:
+
+"SHOP FOOTWEAR"
+
+Secondary button:
+
+"EXPLORE NEW ARRIVALS"
+
+Use large high-quality footwear imagery.
+
+If actual product images exist in Firebase Storage, dynamically use selected featured products.
+
+Do not use random fashion images when actual store/product images are available.
+
+============================================================
+11. HERO DESIGN
+============================================================
+
+Desktop:
+
+Large visual area.
+
+Text on one side.
+
+Footwear visual on the other.
+
+Use a strong black/white composition.
+
+Mobile:
+
+Image first or image/text arrangement depending on screen size.
+
+Do not crop important parts of footwear.
+
+Hero should immediately communicate:
+
+FOOTWEAR STORE
+
+============================================================
+12. HERO ANIMATION
+============================================================
+
+Use a premium footwear-inspired animation.
+
+On page load:
+
+Headline reveals smoothly.
+
+Supporting text follows.
+
+CTA buttons appear after text.
+
+Product image enters with subtle directional movement.
+
+Do NOT use bouncing animations.
+
+Do NOT continuously rotate the shoe.
+
+Use subtle motion.
+
+============================================================
+13. CATEGORY SHOWCASE
+============================================================
+
+Create a major category section.
+
+Title:
+
+"SHOP BY CATEGORY"
+
+Create cards for:
+
+Men's Footwear
+Sports Shoes
+Casual Shoes
+Sandals
+Clogs & Slip-ons
+Everyday Footwear
+New Arrivals
+Offers
+
+Each card should have:
+
+Category image
+Category name
+Short description
+Shop button
+
+Category images should come from Firestore when configured.
+
+============================================================
+14. CATEGORY CARD DESIGN
+============================================================
+
+Use large image cards.
+
+On hover:
+
+Image zoom:
+1.00 → 1.04
+
+Card slightly rises.
+
+Category title moves slightly.
+
+Arrow slides to the right.
+
+A subtle black overlay appears.
+
+On mobile:
+
+Use tap-friendly behavior.
+
+============================================================
+15. FEATURED PRODUCTS
+============================================================
+
+Create:
+
+"FEATURED FOOTWEAR"
+
+Display products where:
+
+featured == true
+
+Product grid:
+
+Desktop:
+4 columns
+
+Large desktop:
+4 columns
+
+Tablet:
+2–3 columns
+
+Mobile:
+2 columns where practical.
+
+Each product card contains:
+
+Product image
+Brand
+Product name
+Price
+Sale price
+Discount badge
+Available sizes
+Wishlist button
+Quick View
+Add to Cart
+
+============================================================
+16. PRODUCT CARD
+============================================================
+
+The product card must be clean and image-focused.
+
+Structure:
+
+IMAGE
+↓
+Brand
+↓
+Product name
+↓
+Price
+↓
+Available sizes
+↓
+Add to Cart
+
+Keep unnecessary information hidden.
+
+Product image should occupy most of the card.
+
+============================================================
+17. PRODUCT CARD HOVER
+============================================================
+
+On desktop hover:
+
+Card rises slightly.
+
+Image zooms subtly.
+
+If multiple images exist:
+
+Image 1 → Image 2
+
+Show Quick View.
+
+Show Wishlist.
+
+Add-to-cart area becomes more prominent.
+
+Do not use aggressive 3D rotation.
+
+Do not make products spin.
+
+============================================================
+18. PRODUCT IMAGE SYSTEM
+============================================================
+
+Products can contain multiple images.
+
+Example:
+
+images:
+[
+  front image,
+  side image,
+  top image,
+  sole image,
+  lifestyle image
+]
+
+Main image should show the product clearly.
+
+Do not stretch images.
+
+Use:
+
+object-fit: contain
+
+for most footwear product photography.
+
+This is important because shoes must remain visually accurate.
+
+============================================================
+19. NEW ARRIVALS
+============================================================
+
+Create:
+
+"NEW ARRIVALS"
+
+Products where:
+
+newArrival == true
+
+appear here automatically.
+
+Each product can have:
+
+NEW badge
+
+Admin controls this flag.
+
+============================================================
+20. BEST SELLERS
+============================================================
+
+Create:
+
+"POPULAR PICKS"
+
+Products where:
+
+bestSeller == true
+
+appear here.
+
+Do not invent popularity.
+
+Only products marked by admin should appear.
+
+============================================================
+21. OFFERS SECTION
+============================================================
+
+Create:
+
+"STEP INTO A BETTER DEAL"
+
+Display products with:
+
+offer == true
+
+or
+
+discountPercentage > 0
+
+Show:
+
+Original price
+Sale price
+Discount
+
+Example:
+
+₹1,499
+₹999
+
+33% OFF
+
+Calculate the discount correctly.
+
+Never create fake discounts.
+
+============================================================
+22. SHOP PAGE
+============================================================
+
+Create a complete footwear marketplace.
+
+Top:
+
+SHOP ALL FOOTWEAR
+
+Search bar.
+
+Filter button.
+
+Sort button.
+
+Product count.
+
+Desktop:
+
+LEFT:
+Filter sidebar
+
+RIGHT:
+Product grid
+
+Mobile:
+
+Filter button
+Sort button
+Product grid
+
+============================================================
+23. FILTERS
+============================================================
+
+Implement:
+
+Category
+Brand
+Gender
+Size
+Color
+Price
+Availability
+Style
+Material
+Discount
+
+Gender:
+
+Men
+Women
+Unisex
+Kids
+
+Only display categories that actually have products.
+
+============================================================
+24. FOOTWEAR SIZE SYSTEM
+============================================================
+
+This is extremely important.
+
+Support Indian footwear sizes.
+
+Example:
+
+6
+7
+8
+9
+10
+11
+12
+
+Also support:
+
+EU sizes
+UK sizes
+US sizes
+
+But sizes must be configurable per product.
+
+Do NOT assume every product uses the same sizing system.
+
+Each product can define:
+
+sizeSystem:
+"UK"
+"India"
+"EU"
+"US"
+
+============================================================
+25. PRODUCT SIZE STOCK
+============================================================
+
+Stock must be tracked PER SIZE.
+
+Example:
+
+Size 6 → 2
+Size 7 → 5
+Size 8 → 8
+Size 9 → 4
+Size 10 → 0
+
+If size 10 reaches zero:
+
+Display:
+
+"Size 10 — Out of Stock"
+
+Disable that size.
+
+Do not allow checkout for unavailable size.
+
+============================================================
+26. COLOR VARIANTS
+============================================================
+
+Products may have multiple colors.
+
+Example:
+
+Black
+White
+Red
+Blue
+
+Each color can have:
+
+color name
+color code
+images
+stock
+
+When customer selects a color:
+
+Update product images.
+
+Update available sizes.
+
+Update stock.
+
+============================================================
+27. PRODUCT DATABASE
+============================================================
+
+Use Firestore collection:
+
+products
+
+Document structure:
+
+{
+  id,
+  name,
+  brand,
+  category,
+  subcategory,
+  gender,
+  description,
+  shortDescription,
+  price,
+  salePrice,
+  discountPercentage,
+  currency,
+  images,
+  thumbnail,
+  variants,
+  sizes,
+  colors,
+  stock,
+  sizeStock,
+  material,
+  style,
+  features,
+  sku,
+  featured,
+  newArrival,
+  bestSeller,
+  offer,
+  status,
+  createdAt,
+  updatedAt
+}
+
+Do NOT hardcode products into React.
+
+All products must come from Firestore.
+
+============================================================
+28. PRODUCT VARIANT STRUCTURE
+============================================================
+
+Support advanced variants.
+
+Example:
+
+variants: [
+
+{
+  color: "Black",
+  colorCode: "#000000",
+  images: [],
+  sizes: {
+    "7": 4,
+    "8": 8,
+    "9": 5,
+    "10": 2
+  }
+},
+
+{
+  color: "White",
+  colorCode: "#FFFFFF",
+  images: [],
+  sizes: {
+    "7": 3,
+    "8": 5,
+    "9": 4,
+    "10": 0
+  }
+}
+
+]
+
+The customer selects:
+
+COLOR
++
+SIZE
+
+before adding the product to cart.
+
+============================================================
+29. PRODUCT DETAILS PAGE
+============================================================
+
+Create a premium product page.
+
+Desktop:
+
+LEFT:
+Image gallery
+
+RIGHT:
+Product information
+
+Show:
+
+Brand
+Product name
+Rating if real reviews exist
+Price
+Sale price
+Discount
+Short description
+Color selector
+Size selector
+Stock status
+Quantity
+Add to Cart
+Buy Now
+Wishlist
+WhatsApp Enquiry
+
+Below:
+
+Product Description
+Features
+Specifications
+Size Guide
+Shipping
+Returns
+Reviews
+Related Products
+
+============================================================
+30. PRODUCT IMAGE GALLERY
+============================================================
+
+Main image should be large.
+
+Below:
+
+thumbnail images.
+
+Click thumbnail:
+
+Smooth image transition.
+
+Next/Previous controls.
+
+Fullscreen image viewer.
+
+Mobile:
+
+Swipe-friendly gallery.
+
+Use directional animation.
+
+============================================================
+31. QUICK VIEW
+============================================================
+
+Click:
+
+Quick View
+
+Open modal.
+
+Show:
+
+Image
+Name
+Price
+Sale price
+Available colors
+Available sizes
+Stock
+Add to Cart
+View Full Details
+
+Do not require page navigation.
+
+============================================================
+32. SIZE GUIDE
+============================================================
+
+Create a reusable size guide modal.
+
+Show:
+
+UK / India
+EU
+US
+
+Provide generic conversion only if configured.
+
+IMPORTANT:
+
+Do not claim exact fitting measurements unless supplied by the store.
+
+Allow admin to add a custom size guide later.
+
+============================================================
+33. WHATSAPP PRODUCT ENQUIRY
+============================================================
+
+Create a WhatsApp button on every product.
+
+Phone:
+
++91 9655187000
+
+Message automatically contains:
+
+Product name
+Selected color
+Selected size
+Price
+
+Example:
+
+"Hello AL-HALAL A FOOT STATION, I am interested in:
+
+Product: [PRODUCT NAME]
+Color: [COLOR]
+Size: [SIZE]
+Price: ₹[PRICE]
+
+Please confirm availability."
+
+Encode the message properly.
+
+============================================================
+34. CART
+============================================================
+
+Create a complete shopping cart.
+
+Each cart item:
+
+Product image
+Product name
+Selected color
+Selected size
+Price
+Quantity
+Subtotal
+Remove
+
+Allow:
+
+Increase quantity
+Decrease quantity
+Remove
+
+Do not allow quantity beyond available stock.
+
+Show:
+
+Subtotal
+Discount
+Shipping
+Total
+
+============================================================
+35. CART VALIDATION
+============================================================
+
+Before checkout:
+
+Re-check Firestore stock.
+
+If stock changed:
+
+Show:
+
+"Some items in your cart are no longer available in the selected quantity."
+
+Update cart accordingly.
+
+Do not trust frontend stock values.
+
+============================================================
+36. CHECKOUT
+============================================================
+
+Create a clean Indian checkout.
+
+STEP 1:
+
+Customer information
+
+Name
+Mobile
+Email
+
+STEP 2:
+
+Address
+
+House / Street
+Area
+City
+District
+State
+Pincode
+
+STEP 3:
+
+Payment
+
+Cash on Delivery
+
+Online Payment
+
+If payment gateway is not configured:
+
+Do NOT fake online payment.
+
+Create a clean architecture for future Razorpay/other gateway integration.
+
+Never expose payment secrets in frontend code.
+
+============================================================
+37. ORDERS
+============================================================
+
+Firestore collection:
+
+orders
+
+Structure:
+
+{
+  id,
+  customerId,
+  customerName,
+  phone,
+  email,
+  items,
+  subtotal,
+  discount,
+  shippingFee,
+  totalAmount,
+  paymentMethod,
+  paymentStatus,
+  orderStatus,
+  shippingAddress,
+  createdAt,
+  updatedAt
+}
+
+Order statuses:
+
+Pending
+Confirmed
+Packed
+Shipped
+Out for Delivery
+Delivered
+Cancelled
+
+============================================================
+38. CUSTOMER LOGIN
+============================================================
+
+Allow customers to browse without login.
+
+For account functionality:
+
+Use Firebase Authentication.
+
+Support:
+
+Google Login
+
+Optionally:
+
+Email/password
+
+Customer account:
+
+My Profile
+My Orders
+Wishlist
+Saved Addresses
+
+============================================================
+39. MY ORDERS
+============================================================
+
+Display:
+
+Order ID
+Order date
+Products
+Total
+Payment status
+Order status
+
+Order detail page:
+
+Show a timeline:
+
+Order Placed
+↓
+Confirmed
+↓
+Packed
+↓
+Shipped
+↓
+Out for Delivery
+↓
+Delivered
+
+Use appropriate icons.
+
+============================================================
+40. WISHLIST
+============================================================
+
+Every product should have a heart icon.
+
+Click:
+
+Add to Wishlist
+
+If logged in:
+
+Store wishlist in Firestore.
+
+If not logged in:
+
+Use temporary local storage.
+
+Wishlist page:
+
+Image
+Product
+Price
+Available stock
+Add to Cart
+Remove
+
+============================================================
+41. SEARCH
+============================================================
+
+Create global search.
+
+Search by:
+
+Product name
+Brand
+Category
+SKU
+Tags
+
+Search UI:
+
+Search icon in header.
+
+Desktop:
+Expanded search field on click.
+
+Mobile:
+Full-width search screen.
+
+Show matching products.
+
+============================================================
+42. CATEGORY PAGES
+============================================================
+
+Create dedicated category pages.
+
+Examples:
+
+/shop
+
+/category/mens-footwear
+
+/category/sports-shoes
+
+/category/casual-footwear
+
+/category/sandals
+
+/category/clogs
+
+/category/new-arrivals
+
+/category/offers
+
+Each page should load Firestore products dynamically.
+
+============================================================
+43. RELATED PRODUCTS
+============================================================
+
+On product details:
+
+"YOU MAY ALSO LIKE"
+
+Recommend products using:
+
+same category
+same brand
+similar price
+same style
+
+Do not recommend:
+
+out-of-stock products.
+
+============================================================
+44. RECENTLY VIEWED
+============================================================
+
+Store recently viewed product IDs.
+
+Display:
+
+"RECENTLY VIEWED"
+
+Use lightweight local storage.
+
+Do not store excessive information.
+
+============================================================
+45. ABOUT SECTION
+============================================================
+
+Create:
+
+"ABOUT AL-HALAL A FOOT STATION"
+
+Describe the business as a footwear showroom focused on providing customers with a variety of footwear styles.
+
+Mention:
+
+Footwear collection
+Casual styles
+Sports styles
+Everyday footwear
+Sandals
+Lifestyle footwear
+
+Do not invent business history.
+
+Use actual store photographs from the uploaded references where appropriate.
+
+============================================================
+46. STORE EXPERIENCE SECTION
+============================================================
+
+Create a section:
+
+"VISIT OUR SHOWROOM"
+
+Use the uploaded exterior storefront image.
+
+Show:
+
+AL-HALAL A FOOT STATION
+
+Add:
+
+"Explore our footwear collection in person."
+
+Buttons:
+
+Call Store
+WhatsApp
+Get Directions
+
+Only use an actual Google Maps URL if supplied/configured.
+
+============================================================
+47. STORE INTERIOR SECTION
+============================================================
+
+Create a visual section:
+
+"EXPLORE THE COLLECTION"
+
+Use the uploaded interior image.
+
+Show the wall-mounted footwear display.
+
+Add a subtle dark overlay.
+
+Text:
+
+"Find your next everyday pair."
+
+CTA:
+
+"Shop Online"
+
+This section connects the physical showroom to the online store.
+
+============================================================
+48. INSTAGRAM SECTION
+============================================================
+
+Create:
+
+"FOLLOW AL-HALAL"
+
+Display:
+
+@alhalalfoot_truck
+
+Use a visual social-media-style product grid.
+
+IMPORTANT:
+
+Do not scrape Instagram automatically.
+
+Use manually uploaded images or configured Instagram embeds/API if available.
+
+CTA:
+
+"Follow Us on Instagram"
+
+============================================================
+49. YOUTUBE SECTION
+============================================================
+
+Create:
+
+"SEE US IN ACTION"
+
+If a YouTube channel/video URL is configured:
+
+Display a YouTube video section.
+
+Do not invent videos.
+
+If no URL is configured:
+
+Display a clean placeholder:
+
+"Watch our latest footwear videos"
+
+with a button for the admin-configured YouTube channel.
+
+============================================================
+50. WHY SHOP WITH US
+============================================================
+
+Create a four-card section:
+
+WIDE FOOTWEAR COLLECTION
+
+Explore multiple styles for everyday use.
+
+SHOWROOM EXPERIENCE
+
+Visit the physical store and explore the collection.
+
+EASY CUSTOMER SUPPORT
+
+Quick phone and WhatsApp assistance.
+
+CONVENIENT ONLINE SHOPPING
+
+Browse products and order from anywhere.
+
+Do not make unsupported claims.
+
+============================================================
+51. CONTACT SECTION
+============================================================
+
+Create:
+
+"GET IN TOUCH"
+
+Phone:
+
++91 9655187000
++91 97875 36452
+
+Buttons:
+
+Call Now
+WhatsApp
+
+Instagram:
+
+@alhalalfoot_truck
+
+YouTube:
+
+Admin-configurable link.
+
+Address:
+
+Admin-configurable.
+
+Business hours:
+
+Admin-configurable.
+
+============================================================
+52. FOOTER
+============================================================
+
+Create a strong black footer.
+
+Display:
+
+AL-HALAL
+A FOOT STATION
+
+Quick Links:
+
+Home
+Shop
+Men
+Sports
+Casual
+Sandals
+New Arrivals
+Offers
+About
+Contact
+
+Customer:
+
+My Account
+Orders
+Wishlist
+Cart
+
+Contact:
+
++91 9655187000
++91 97875 36452
+
+Social:
+
+Instagram
+YouTube
+
+Bottom:
+
+© AL-HALAL A FOOT STATION
+
+Add a professional disclaimer:
+
+"Product availability, prices, sizes and stock are subject to change. Please contact the store for current availability."
+
+============================================================
+53. ADMIN DASHBOARD
+============================================================
+
+Create:
+
+/admin
+
+Protected admin area.
+
+Admin navigation:
+
+Dashboard
+Products
+Add Product
+Orders
+Categories
+Banners
+Offers
+Customers
+Reviews
+Settings
+
+============================================================
+54. ADMIN LOGIN
+============================================================
+
+Use Firebase Authentication.
+
+Primary admin login:
+
+Google Sign-In
+
+Use the official Firebase Google provider.
+
+Do NOT create a fake Google login screen.
+
+After login:
+
+Retrieve Firebase UID.
+
+Check:
+
+admins/{uid}
+
+Only authorized admins can access dashboard.
+
+Unauthorized:
+
+Sign out.
+
+Display:
+
+"Access denied. This Google account is not authorized."
+
+============================================================
+55. ADMIN AUTHORIZATION
+============================================================
+
+Firestore:
+
+admins/{uid}
+
+Example:
+
+{
+  email,
+  name,
+  role: "admin",
+  active: true,
+  createdAt
+}
+
+Use UID-based authorization.
+
+Never authorize only based on:
+
+email text
+display name
+frontend variables
+localStorage
+
+Actual authorization must be enforced through Firestore Security Rules.
+
+============================================================
+56. ADMIN DASHBOARD HOME
+============================================================
+
+Display real Firestore statistics:
+
+Total Products
+Active Products
+Out of Stock
+Total Orders
+Pending Orders
+Delivered Orders
+Customers
+Reviews Pending
+
+Do not create fake numbers.
+
+============================================================
+57. ADMIN PRODUCT MANAGEMENT
+============================================================
+
+Admin can:
+
+Add Product
+Edit Product
+Delete Product
+Duplicate Product
+Change Price
+Change Sale Price
+Change Stock
+Change Sizes
+Change Colors
+Upload Images
+Delete Images
+Set Featured
+Set New Arrival
+Set Best Seller
+Set Offer
+Publish
+Unpublish
+
+============================================================
+58. ADD PRODUCT FORM
+============================================================
+
+Create a professional product form.
+
+SECTION A:
+Basic Information
+
+Product Name
+Brand
+Category
+Subcategory
+Gender
+SKU
+
+SECTION B:
+Pricing
+
+Regular Price
+Sale Price
+
+Automatically calculate:
+
+Discount Percentage
+
+SECTION C:
+DESCRIPTION
+
+Short Description
+Full Description
+
+SECTION D:
+PRODUCT INFORMATION
+
+Material
+Style
+Features
+
+SECTION E:
+VARIANTS
+
+Colors
+Sizes
+Size system
+
+SECTION F:
+SIZE STOCK
+
+Allow admin to enter stock per size.
+
+Example:
+
+6 → 3
+7 → 8
+8 → 10
+9 → 5
+10 → 0
+
+SECTION G:
+IMAGES
+
+Multiple image upload.
+
+SECTION H:
+VISIBILITY
+
+Active
+Featured
+New Arrival
+Best Seller
+Offer
+
+============================================================
+59. PRODUCT IMAGE UPLOAD
+============================================================
+
+Use Firebase Storage.
+
+Path:
+
+products/{productId}/
+
+Allow:
+
+Multiple images
+Preview
+Delete
+Reorder
+Primary image selection
+
+Store only image URLs in Firestore.
+
+Do not store image binaries inside Firestore.
+
+Validate:
+
+JPG
+JPEG
+PNG
+WEBP
+
+Show upload progress.
+
+============================================================
+60. EDIT PRODUCT
+============================================================
+
+When admin clicks Edit:
+
+Load existing Firestore document.
+
+Allow editing:
+
+Name
+Price
+Sale price
+Description
+Category
+Sizes
+Colors
+Stock
+Images
+Features
+Status
+Featured
+New Arrival
+Best Seller
+Offer
+
+Update:
+
+updatedAt
+
+Do not create duplicate products.
+
+============================================================
+61. DELETE PRODUCT
+============================================================
+
+Require confirmation.
+
+Example:
+
+"Delete this product?"
+
+Show product name.
+
+After confirmation:
+
+Delete Firestore document.
+
+Delete associated Storage images where possible.
+
+Show:
+
+"Product deleted successfully."
+
+============================================================
+62. STOCK MANAGEMENT
+============================================================
+
+Create stock management.
+
+Admin can see:
+
+Product
+Color
+Size
+Available quantity
+
+Example:
+
+Black / 8 → 5
+Black / 9 → 2
+White / 8 → 0
+
+When stock reaches zero:
+
+Automatically display:
+
+OUT OF STOCK
+
+on that specific variant.
+
+============================================================
+63. ORDER MANAGEMENT
+============================================================
+
+Admin can:
+
+View orders
+Search orders
+Filter orders
+Open order
+Update order status
+View customer
+View address
+View items
+View payment status
+
+Order status:
+
+Pending
+Confirmed
+Packed
+Shipped
+Out for Delivery
+Delivered
+Cancelled
+
+============================================================
+64. ADMIN ORDER SEARCH
+============================================================
+
+Search by:
+
+Order ID
+Customer name
+Phone
+Product
+
+Filter by:
+
+Status
+Payment
+Date
+
+Sort:
+
+Newest
+Oldest
+Highest value
+Lowest value
+
+============================================================
+65. ADMIN CATEGORY MANAGEMENT
+============================================================
+
+Collection:
+
+categories
+
+Fields:
+
+name
+slug
+image
+description
+active
+order
+createdAt
+
+Admin can:
+
+Add
+Edit
+Delete
+Enable
+Disable
+Reorder
+
+============================================================
+66. ADMIN BANNER MANAGEMENT
+============================================================
+
+Collection:
+
+banners
+
+Fields:
+
+image
+title
+subtitle
+buttonText
+buttonLink
+active
+order
+createdAt
+
+Admin can manage homepage hero banners.
+
+Allow:
+
+Upload banner
+Change title
+Change CTA
+Enable/disable
+Reorder
+
+============================================================
+67. ADMIN OFFERS
+============================================================
+
+Admin can create offers.
+
+Fields:
+
+title
+description
+discountType
+discountValue
+startDate
+endDate
+active
+
+Expired offers should automatically stop displaying.
+
+============================================================
+68. ADMIN REVIEWS
+============================================================
+
+Collection:
+
+reviews
+
+Fields:
+
+productId
+customerId
+customerName
+rating
+comment
+approved
+createdAt
+
+Admin can:
+
+Approve
+Hide
+Delete
+
+Do not generate fake reviews.
+
+============================================================
+69. ADMIN SETTINGS
+============================================================
+
+Create:
+
+settings/business
+
+Fields:
+
+businessName
+phone1
+phone2
+whatsapp
+address
+businessHours
+instagram
+youtube
+facebook
+googleMapsUrl
+announcementText
+heroTitle
+heroSubtitle
+
+Admin can update these values.
+
+Public website reads them dynamically.
+
+============================================================
+70. FIRESTORE SECURITY
+============================================================
+
+Security is critical.
+
+Public users:
+
+Can read active products.
+
+Can read active categories.
+
+Can read active banners.
+
+Can create their own orders according to validation rules.
+
+Can read only their own orders.
+
+Cannot modify products.
+
+Cannot modify categories.
+
+Cannot modify banners.
+
+Cannot modify offers.
+
+Cannot modify admins.
+
+Cannot access other customers' private data.
+
+Only authorized admins can manage products, orders, categories, banners, offers, reviews and settings.
+
+Use:
+
+isAdmin()
+
+based on:
+
+request.auth.uid
+
+and:
+
+admins/{uid}
+
+active == true
+
+Never use:
+
+allow read, write: if true;
+
+============================================================
+71. STORAGE SECURITY
+============================================================
+
+Public:
+
+Can read product images.
+
+Admins:
+
+Can upload product images.
+
+Admins:
+
+Can delete product images.
+
+Unauthenticated users:
+
+Cannot upload.
+
+Restrict upload types.
+
+============================================================
+72. CUSTOMER DATA SECURITY
+============================================================
+
+A customer must only be able to read their own:
+
+orders
+profile
+wishlist
+addresses
+
+Never expose another customer's:
+
+phone
+address
+order history
+
+============================================================
+73. PAYMENT ARCHITECTURE
+============================================================
+
+Create payment architecture but do not fake payment success.
+
+Support:
+
+Cash on Delivery
+
+Future:
+
+Razorpay / UPI / online payment
+
+Payment secrets must NEVER be placed in frontend code.
+
+============================================================
+74. WHATSAPP SYSTEM
+============================================================
+
+Create a reusable WhatsApp helper.
+
+Business number:
+
++91 9655187000
+
+Functions:
+
+openWhatsApp()
+generateProductWhatsAppMessage()
+generateOrderWhatsAppMessage()
+
+Product message includes:
+
+Product
+Size
+Color
+Price
+
+Order message includes:
+
+Order ID
+Customer
+Issue/request
+
+============================================================
+75. RESPONSIVE DESIGN
+============================================================
+
+Support:
+
+320px
+360px
+375px
+390px
+414px
+768px
+1024px
+1280px
+1440px
+1920px
+
+Mobile-first.
+
+Mobile product grid:
+
+2 columns where image and text remain readable.
+
+Desktop:
+
+4-column product grid.
+
+Tablet:
+
+2–3 columns.
+
+============================================================
+76. MOBILE BOTTOM NAVIGATION
+============================================================
+
+Create optional mobile bottom navigation:
+
+Home
+Shop
+Search
+Wishlist
+Cart
+
+Active icon uses black/red accent.
+
+Keep it compact.
+
+Do not cover important content.
+
+============================================================
+77. PRODUCT ANIMATIONS
+============================================================
+
+Use premium subtle animations.
+
+PRODUCT ENTERING VIEW:
+
+Products appear using staggered reveal.
+
+Different rows can use slight directional movement.
+
+PRODUCT HOVER:
+
+Image zooms slightly.
+
+Card rises.
+
+Wishlist appears.
+
+Quick View appears.
+
+PRODUCT IMAGE:
+
+Subtle light sweep can pass over image.
+
+Do not continuously animate shoes.
+
+============================================================
+78. CATEGORY ANIMATIONS
+============================================================
+
+Category cards:
+
+Image slightly zooms.
+
+Card rises.
+
+Arrow moves.
+
+Overlay appears.
+
+Use different reveal directions for different cards.
+
+Keep animations short.
+
+============================================================
+79. CART ANIMATION
+============================================================
+
+When customer adds footwear:
+
+Show:
+
+"Added to cart"
+
+Cart icon count updates smoothly.
+
+The selected product thumbnail can briefly animate toward the cart icon on desktop if implemented without hurting performance.
+
+Do not make the animation excessive.
+
+============================================================
+80. PRODUCT DETAILS ANIMATION
+============================================================
+
+When product page opens:
+
+Main image reveals first.
+
+Then:
+
+Product name
+Price
+Colors
+Sizes
+Quantity
+Add to Cart
+
+appear sequentially.
+
+Size selection:
+
+Selected size gets a subtle scale/border animation.
+
+Color selection:
+
+Selected color gets a clean outline.
+
+============================================================
+81. FILTER ANIMATION
+============================================================
+
+When customer changes filters:
+
+Do not reload the page.
+
+Existing products smoothly leave.
+
+New matching products enter.
+
+Use smooth layout transitions.
+
+Do not flash the entire page.
+
+============================================================
+82. SCROLL ANIMATIONS
+============================================================
+
+Each major section should have different subtle motion.
+
+Hero:
+Directional reveal.
+
+Categories:
+Stagger.
+
+Featured products:
+Staggered product entrance.
+
+Store section:
+Image slide.
+
+Instagram:
+Grid reveal.
+
+Contact:
+Panel reveal.
+
+Footer:
+Subtle upward reveal.
+
+Do not use the same fade-up animation everywhere.
+
+============================================================
+83. ACCESSIBILITY
+============================================================
+
+Support:
+
+Keyboard navigation
+ARIA labels
+Proper form labels
+Alt text
+Focus states
+Readable contrast
+Reduced motion
+
+Respect:
+
+prefers-reduced-motion
+
+If enabled:
+
+Disable parallax.
+Disable 3D effects.
+Reduce animation duration.
+Keep essential state transitions.
+
+============================================================
+84. PERFORMANCE
+============================================================
+
+Use:
+
+Lazy-loaded images
+Optimized Firebase queries
+Pagination
+Firestore indexes
+IntersectionObserver
+CSS transforms
+Opacity animations
+
+Avoid expensive animations.
+
+Do not animate:
+
+width
+height
+top
+left
+
+when transform can be used.
+
+Do not load every product image immediately.
+
+============================================================
+85. SEO
+============================================================
+
+SEO title:
+
+"AL-HALAL A FOOT STATION | Footwear Store"
+
+Meta description:
+
+"Explore footwear from AL-HALAL A FOOT STATION. Shop casual footwear, sports shoes, sandals, clogs and more."
+
+Use:
+
+Proper H1
+H2
+Product structured data
+Open Graph
+Image alt text
+Clean URLs
+
+Example:
+
+/shop
+
+/product/black-casual-shoe
+
+/category/sports-shoes
+
+============================================================
+86. PRODUCT URL
+============================================================
+
+Use readable slugs.
+
+Example:
+
+/product/mens-black-casual-shoe
+
+Do not expose raw Firestore IDs if avoidable.
+
+============================================================
+87. EMPTY STATES
+============================================================
+
+Empty cart:
+
+"Your cart is empty."
+
+CTA:
+
+"Explore Footwear"
+
+Empty wishlist:
+
+"Save your favourite pairs here."
+
+No search result:
+
+"No footwear found."
+
+Out of stock:
+
+"Currently unavailable."
+
+No category products:
+
+"New styles are coming soon."
+
+============================================================
+88. LOADING STATES
+============================================================
+
+Use skeleton loaders for:
+
+Product cards
+Product page
+Category sections
+Orders
+
+Do not show a blank white screen while Firestore loads.
+
+============================================================
+89. ERROR HANDLING
+============================================================
+
+Handle:
+
+Firebase unavailable
+Network errors
+Firestore permission denied
+Image upload errors
+Authentication errors
+Missing product
+Out-of-stock item
+Checkout errors
+Order errors
+
+Show user-friendly messages.
+
+Never expose raw Firebase errors to customers.
+
+============================================================
+90. PROJECT STRUCTURE
+============================================================
+
+Recommended structure:
+
+src/
+
+components/
+  Header
+  Footer
+  Hero
+  CategoryCard
+  ProductCard
+  ProductGrid
+  ProductGallery
+  ProductFilters
+  SearchBar
+  CartItem
+  WishlistButton
+  QuickView
+  SizeSelector
+  ColorSelector
+  WhatsAppButton
+  Modal
+  Toast
+  LoadingSkeleton
+
+pages/
+  Home
+  Shop
+  Category
+  ProductDetails
+  Search
+  Cart
+  Checkout
+  Wishlist
+  Account
+  Orders
+  About
+  Contact
+  Store
+  Offers
+
+admin/
+  Login
+  Dashboard
+  Products
+  AddProduct
+  EditProduct
+  Orders
+  Categories
+  Banners
+  Offers
+  Reviews
+  Settings
+
+firebase/
+  config
+  auth
+  firestore
+  storage
+
+hooks/
+  useAuth
+  useProducts
+  useCart
+  useWishlist
+  useOrders
+
+utils/
+  whatsapp
+  pricing
+  validation
+  stock
+
+============================================================
+91. FIREBASE CONFIG
+============================================================
+
+Create a Firebase configuration placeholder.
+
+Example:
+
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+
+Never invent credentials.
+
+Never place Firebase service-account private keys in frontend code.
+
+============================================================
+92. ADMIN BOOTSTRAP
+============================================================
+
+README must explain:
+
+1. Create Firebase project.
+2. Enable Google Authentication.
+3. Create Firestore.
+4. Create Storage.
+5. Login with intended Google account.
+6. Retrieve Firebase UID.
+7. Create:
+
+admins/{UID}
+
+with:
+
+{
+  email: "...",
+  name: "...",
+  role: "admin",
+  active: true
+}
+
+8. Login again.
+
+Only then dashboard becomes accessible.
+
+Never create:
+
+"Make me admin"
+
+button.
+
+============================================================
+93. DEMO PRODUCTS
+============================================================
+
+Create a small set of clearly marked DEMO products to demonstrate the UI.
+
+Examples:
+
+Men's Casual Black Shoe
+Classic White Sports Shoe
+Everyday Slip-On
+Comfort Sandal
+Lifestyle Clog
+Red Casual Sneaker
+
+IMPORTANT:
+
+These are demonstration products only.
+
+Do not claim that these are actual current store inventory.
+
+Make it easy for the admin to replace them.
+
+============================================================
+94. INVENTORY PRINCIPLE
+============================================================
+
+The owner must never need to edit React code to add a new product.
+
+Correct flow:
+
+Admin
+→ Login
+→ Products
+→ Add Product
+→ Upload images
+→ Enter product details
+→ Enter price
+→ Add colors
+→ Add sizes
+→ Enter stock
+→ Publish
+
+Then:
+
+Firestore
+→ Public website
+→ Product automatically appears.
+
+If admin changes price:
+
+Website updates.
+
+If admin changes stock:
+
+Website updates.
+
+If admin uploads new images:
+
+Website updates.
+
+If admin disables product:
+
+Product disappears from public shop.
+
+============================================================
+95. PRODUCT VISIBILITY
+============================================================
+
+Product status:
+
+draft
+active
+inactive
+out_of_stock
+
+Behavior:
+
+draft:
+Admin only.
+
+active:
+Public.
+
+inactive:
+Hidden.
+
+out_of_stock:
+Visible but purchase disabled.
+
+============================================================
+96. FEATURE FLAGS
+============================================================
+
+Each product supports:
+
+featured
+newArrival
+bestSeller
+offer
+
+Homepage sections dynamically use these flags.
+
+============================================================
+97. ADMIN PRODUCT PREVIEW
+============================================================
+
+Before publishing:
+
+Show:
+
+Preview Product
+
+Allow admin to see how the product appears to customers.
+
+Buttons:
+
+Save Draft
+Publish
+
+Draft products never appear publicly.
+
+============================================================
+98. ADMIN DASHBOARD DESIGN
+============================================================
+
+Admin dashboard should use:
+
+Black
+White
+Gray
+Subtle red accent
+
+Sidebar:
+
+Dashboard
+Products
+Orders
+Categories
+Offers
+Banners
+Reviews
+Settings
+
+Top:
+
+AL-HALAL A FOOT STATION
+Admin account
+Logout
+
+Dashboard cards:
+
+Products
+Orders
+Customers
+Revenue if supported by actual order data
+
+Do not create fake revenue.
+
+============================================================
+99. ADMIN PRODUCT TABLE
+============================================================
+
+Columns:
+
+Image
+Product
+Category
+Price
+Stock
+Status
+Featured
+New Arrival
+Updated
+Actions
+
+Actions:
+
+View
+Edit
+Duplicate
+Disable
+Delete
+
+Use confirmation dialogs for delete.
+
+============================================================
+100. ADMIN MOBILE
+============================================================
+
+Admin must work on mobile.
+
+Use:
+
+Collapsible sidebar
+Responsive forms
+Scrollable tables
+Large touch targets
+
+Admin should be able to add a product from a phone.
+
+============================================================
+101. FINAL DESIGN DIRECTION
+============================================================
+
+The final website should visually connect the physical showroom and online store.
+
+Use the uploaded images strategically:
+
+STORE EXTERIOR IMAGE:
+Use in:
+Store section
+About section
+Contact section
+
+STORE INTERIOR IMAGE:
+Use in:
+Hero/supporting section
+Collection section
+About section
+
+INSTAGRAM PROFILE IMAGE:
+Use only as branding reference.
+
+Do not turn the website into an Instagram clone.
+
+============================================================
+102. IMPORTANT PRODUCT PRESENTATION
+============================================================
+
+FOOTWEAR IS THE HERO.
+
+The website should prioritize:
+
+Large footwear photography
+Clear product names
+Clear pricing
+Size availability
+Color selection
+Stock status
+Easy purchase
+
+Do not fill product cards with unnecessary text.
+
+A customer should be able to understand a product within 2 seconds.
+
+============================================================
+103. FINAL CUSTOMER EXPERIENCE
+============================================================
+
+The customer should experience:
+
+OPEN WEBSITE
+↓
+SEE AL-HALAL BRAND
+↓
+SEE BEAUTIFUL FOOTWEAR
+↓
+CHOOSE CATEGORY
+↓
+FILTER BY SIZE/PRICE/STYLE
+↓
+OPEN PRODUCT
+↓
+VIEW MULTIPLE IMAGES
+↓
+SELECT COLOR
+↓
+SELECT SIZE
+↓
+CHECK STOCK
+↓
+ADD TO CART
+↓
+CHECKOUT
+↓
+PLACE ORDER
+↓
+TRACK ORDER
+
+============================================================
+104. FINAL ADMIN EXPERIENCE
+============================================================
+
+ADMIN:
+
+Google Login
+↓
+Verify Firebase UID
+↓
+Admin Dashboard
+↓
+Products
+↓
+Add Product
+↓
+Upload Footwear Images
+↓
+Enter Price
+↓
+Select Category
+↓
+Add Colors
+↓
+Add Sizes
+↓
+Enter Size-wise Stock
+↓
+Publish
+
+Then automatically:
+
+Firestore
+↓
+Website
+↓
+Product appears
+
+No code modification required.
+
+============================================================
+105. SECURITY FINAL REQUIREMENTS
+============================================================
+
+NEVER:
+
+Expose service account credentials.
+
+Store private API secrets in frontend.
+
+Use frontend-only admin protection.
+
+Allow public product writes.
+
+Allow public admin creation.
+
+Trust localStorage for authorization.
+
+Use:
+
+allow read, write: if true;
+
+Firestore rules must enforce actual permissions.
+
+Only authorized admin UIDs can manage the store.
+
+============================================================
+106. FINAL QUALITY STANDARD
+============================================================
+
+The finished application must look like a real modern footwear e-commerce business.
+
+It should NOT look like:
+
+A generic AI template
+A basic Bootstrap shop
+An Instagram clone
+A random sneaker website
+A colorful children's store
+A fake luxury brand
+
+It should feel like:
+
+AL-HALAL A FOOT STATION
+
+translated from its real physical showroom into a professional online shopping experience.
+
+The design must be:
+
+Modern
+Minimal
+Bold
+Footwear-focused
+Mobile-first
+Fast
+Responsive
+Easy to shop
+Easy to manage
+Secure
+Scalable
+
+Use the uploaded references as the visual identity source throughout the project.
+
+Generate the complete working application with:
+
+React
+Tailwind CSS
+Firebase Authentication
+Google Login
+Firestore
+Firebase Storage
+Customer shopping
+Product variants
+Size-wise stock
+Color variants
+Cart
+Wishlist
+Checkout
+Orders
+WhatsApp
+Admin dashboard
+Product CRUD
+Image management
+Category management
+Offer management
+Banner management
+Review management
+Business settings
+Security rules
+Storage rules
+Responsive UI
+Animations
+SEO
+README setup instructions.
+
+Do not leave major features as fake placeholders.
+
+Build the architecture so the store can actually be operated through the admin dashboard without modifying the source code.

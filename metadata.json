@@ -1,0 +1,6 @@
+{
+  "name": "SG Leathers Factory Outlet",
+  "description": "SG LEATHERS - Genuine Leather Factory Outlet in Periamet, Chennai. Direct-from-factory pricing, flat-rate ₹999 deals, genuine leather shoes, loafers, boots, laptop bags, duffels, jackets, and accessories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
