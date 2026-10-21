@@ -14,31 +14,31 @@ export const FloatingShowcase: React.FC = () => {
   if (!currentProduct) return null;
 
   return (
-    <section className="py-16 bg-white border-b border-stone-200 relative overflow-hidden bg-grid-pattern-dense">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-8 sm:py-16 bg-white border-b border-stone-200 relative overflow-hidden bg-grid-pattern-dense">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Heading */}
-        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-4 mb-10">
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-3 sm:gap-4 mb-6 sm:mb-10">
           <div>
-            <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-black bg-stone-100 px-3 py-1 rounded-full mb-2 border border-stone-200">
-              <Sparkles className="w-3.5 h-3.5 text-black" />
+            <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-black uppercase tracking-wider text-black bg-stone-100 px-2.5 py-1 rounded-full mb-1.5 sm:mb-2 border border-stone-200">
+              <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-black" />
               <span>Interactive Leather Experience</span>
             </div>
-            <h2 className="font-brand text-3xl sm:text-4xl font-black text-black">
+            <h2 className="font-brand text-2xl sm:text-4xl font-black text-black">
               CRAFTED IN PERIAMET. FLOATING GALLERY.
             </h2>
-            <p className="text-sm text-stone-600 mt-1 max-w-xl">
+            <p className="text-xs sm:text-sm text-stone-600 mt-1 max-w-xl">
               Inspect pure grain textures, hand-waxed patinas, and durable welted soles. Select an item below to view dynamic floating previews.
             </p>
           </div>
 
           {/* Interactive Switchers */}
-          <div className="flex items-center gap-1.5 bg-stone-100 p-1 rounded-2xl border border-stone-200">
+          <div className="flex items-center gap-1 bg-stone-100 p-1 rounded-xl sm:rounded-2xl border border-stone-200 overflow-x-auto w-full md:w-auto">
             {floatingItems.map((item, index) => (
               <button
                 key={item.id}
                 onClick={() => setActiveTab(index)}
-                className={`px-4 py-2 rounded-xl text-xs font-black transition-all ${
+                className={`flex-1 md:flex-none px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-black transition-all whitespace-nowrap ${
                   activeTab === index 
                     ? 'bg-black text-white shadow-sm' 
                     : 'text-stone-600 hover:text-black'
@@ -51,10 +51,10 @@ export const FloatingShowcase: React.FC = () => {
         </div>
 
         {/* Dynamic Floating Showcase Box */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-stone-50 border border-stone-200 rounded-3xl p-6 sm:p-10 shadow-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 items-center bg-stone-50 border border-stone-200 rounded-2xl sm:rounded-3xl p-3.5 sm:p-10 shadow-md sm:shadow-lg">
           
           {/* Left Column: Floating Image & Badges */}
-          <div className="lg:col-span-7 relative flex items-center justify-center min-h-[340px] sm:min-h-[400px]">
+          <div className="lg:col-span-7 relative flex items-center justify-center min-h-[250px] sm:min-h-[400px]">
             
             {/* Orbiting Floating Badge A */}
             <div className="absolute top-4 left-2 sm:left-6 z-20 animate-float-slow">

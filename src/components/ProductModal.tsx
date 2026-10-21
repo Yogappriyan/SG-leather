@@ -70,7 +70,7 @@ export const ProductModal: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 md:p-6 overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 overflow-y-auto">
       {/* Backdrop */}
       <div 
         className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
@@ -78,10 +78,10 @@ export const ProductModal: React.FC = () => {
       />
 
       {/* Modal Dialog with White Background */}
-      <div className="relative w-full max-w-4xl bg-white border border-stone-200 rounded-3xl shadow-2xl overflow-hidden z-10 flex flex-col max-h-[92vh] animate-in zoom-in-95 duration-200 text-stone-900">
+      <div className="relative w-full max-w-4xl bg-white border border-stone-200 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden z-10 flex flex-col max-h-[92vh] animate-in zoom-in-95 duration-200 text-stone-900">
         
         {/* Header Bar */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-stone-200 bg-stone-50 shrink-0">
+        <div className="flex items-center justify-between px-4 sm:px-6 py-2.5 sm:py-4 border-b border-stone-200 bg-stone-50 shrink-0">
           <div className="flex items-center gap-2">
             <span className="text-xs font-black uppercase tracking-wider text-black">
               {product.brand}
@@ -92,14 +92,14 @@ export const ProductModal: React.FC = () => {
 
           <button
             onClick={() => setQuickViewProduct(null)}
-            className="p-1.5 rounded-full text-stone-400 hover:text-black hover:bg-stone-200 transition-colors"
+            className="p-1 rounded-full text-stone-400 hover:text-black hover:bg-stone-200 transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Modal Scrollable Content */}
-        <div className="overflow-y-auto p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+        <div className="overflow-y-auto p-3.5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-8">
           
           {/* Left Column: Image Gallery */}
           <div className="md:col-span-6 flex flex-col space-y-4">
@@ -302,32 +302,32 @@ export const ProductModal: React.FC = () => {
             </div>
 
             {/* Action Buttons Row */}
-            <div className="space-y-2.5 pt-4 border-t border-stone-200">
+            <div className="space-y-2 sm:space-y-2.5 pt-3 sm:pt-4 border-t border-stone-200">
               
-              <div className="flex gap-3">
+              <div className="flex gap-2 sm:gap-3">
                 <button
                   onClick={handleAddToCart}
                   disabled={isOutOfStock}
-                  className={`flex-1 py-3.5 px-4 rounded-xl font-black text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                  className={`flex-1 py-2.5 sm:py-3.5 px-3 sm:px-4 rounded-xl font-black text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-1.5 sm:gap-2 transition-all cursor-pointer ${
                     isOutOfStock
                       ? 'bg-stone-100 text-stone-400 border border-stone-200 cursor-not-allowed'
                       : 'bg-white hover:bg-stone-50 text-black border border-stone-300 hover:border-black shadow-sm'
                   }`}
                 >
-                  <ShoppingBag className="w-4 h-4" />
-                  <span>{isOutOfStock ? 'Size Out of Stock' : 'Add to Bag'}</span>
+                  <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  <span>{isOutOfStock ? 'Out of Stock' : 'Add to Bag'}</span>
                 </button>
 
                 <button
                   onClick={handleBuyNow}
                   disabled={isOutOfStock}
-                  className={`flex-1 py-3.5 px-4 rounded-xl font-black text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer ${
+                  className={`flex-1 py-2.5 sm:py-3.5 px-3 sm:px-4 rounded-xl font-black text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-1.5 sm:gap-2 shadow-md transition-all cursor-pointer ${
                     isOutOfStock
                       ? 'bg-stone-100 text-stone-400 cursor-not-allowed'
                       : 'bg-black hover:bg-stone-800 text-white active:scale-95'
                   }`}
                 >
-                  <Zap className="w-4 h-4 fill-white" />
+                  <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-white" />
                   <span>Buy Now</span>
                 </button>
               </div>
@@ -335,10 +335,10 @@ export const ProductModal: React.FC = () => {
               {/* WhatsApp direct assistance */}
               <button
                 onClick={handleWhatsApp}
-                className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-sm"
+                className="w-full py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 sm:gap-2 transition-colors cursor-pointer shadow-sm"
               >
-                <MessageSquare className="w-4 h-4" />
-                <span>Enquire or Order via WhatsApp ({settings.retailWhatsApp1})</span>
+                <MessageSquare className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                <span>Enquire via WhatsApp</span>
               </button>
 
               <div className="text-[11px] text-stone-500 text-center pt-1 font-medium">

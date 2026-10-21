@@ -23,28 +23,28 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onShowroom }) => {
   const heroProduct = products.find(p => p.isFlat999) || products[0];
 
   return (
-    <section className="relative overflow-hidden bg-white bg-grid-pattern border-b border-stone-200 pt-10 pb-16 lg:pt-16 lg:pb-24">
+    <section className="relative overflow-hidden bg-white bg-grid-pattern border-b border-stone-200 pt-6 pb-10 sm:pt-10 sm:pb-16 lg:pt-16 lg:pb-24">
       
       {/* Background Watermark SG LEATHERS Typography */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2 text-[12vw] font-black text-stone-100/60 pointer-events-none select-none tracking-tighter leading-none whitespace-nowrap z-0">
         SG LEATHERS
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-8 items-center">
           
-          {/* Left Hero Text Content matching reference image */}
-          <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
+          {/* Left Hero Text Content */}
+          <div className="lg:col-span-7 flex flex-col items-start text-left space-y-3.5 sm:space-y-6">
             
-            {/* Top Pill Badge matching reference image */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black text-white text-xs font-black tracking-wider uppercase shadow-sm">
-              <Flame className="w-3.5 h-3.5 fill-amber-400 text-amber-400 shrink-0" />
+            {/* Top Pill Badge */}
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-black text-white text-[10px] sm:text-xs font-black tracking-wider uppercase shadow-sm">
+              <Flame className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-amber-400 text-amber-400 shrink-0" />
               <span>SHOWROOM SHOWCASE • PERIAMET, CHENNAI</span>
             </div>
 
-            {/* Headline matching reference image */}
+            {/* Headline */}
             <div className="space-y-1">
-              <h1 className="font-brand text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black text-black tracking-tight leading-[1.05]">
+              <h1 className="font-brand text-3xl sm:text-5xl md:text-6xl xl:text-7xl font-black text-black tracking-tight leading-[1.08]">
                 STEP INTO <br />
                 <span className="relative inline-block text-stone-700">
                   SG LEATHERS STYLE
@@ -53,39 +53,39 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onShowroom }) => {
               </h1>
             </div>
 
-            {/* Subtitle & Value Proposition matching reference image */}
-            <p className="text-base sm:text-lg text-stone-600 max-w-xl font-normal leading-relaxed">
+            {/* Subtitle & Value Proposition */}
+            <p className="text-xs sm:text-base lg:text-lg text-stone-600 max-w-xl font-normal leading-relaxed">
               Quality genuine leather footwear and handcrafted accessories for everyday comfort and style. Explore our direct-from-factory collection—including famous flat-rate <strong className="text-black font-bold">₹999 deals</strong>—or visit our showroom at 2nd Floor, Vepery High Road, Periamet, Chennai.
             </p>
 
-            {/* Action Buttons matching reference image */}
-            <div className="flex flex-wrap items-center gap-3 pt-2 w-full sm:w-auto">
+            {/* Action Buttons */}
+            <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 pt-1 sm:pt-2 w-full sm:w-auto">
               {/* Primary Solid Black CTA with Bag icon */}
               <button
                 onClick={() => onExplore('all')}
-                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-black hover:bg-stone-800 text-white font-black text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2.5 shadow-md active:scale-95 transition-all cursor-pointer"
+                className="w-full sm:w-auto px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl bg-black hover:bg-stone-800 text-white font-black text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2 sm:gap-2.5 shadow-md active:scale-95 transition-all cursor-pointer"
               >
-                <ShoppingBag className="w-4 h-4" />
+                <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 <span>SHOP FOOTWEAR</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </button>
 
               {/* Secondary White Button with Border */}
               <button
                 onClick={() => onExplore('flat-999-deals')}
-                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white hover:bg-stone-50 text-black font-bold text-xs sm:text-sm tracking-wider uppercase border border-stone-300 hover:border-black transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer"
+                className="w-full sm:w-auto px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl bg-white hover:bg-stone-50 text-black font-bold text-xs sm:text-sm tracking-wider uppercase border border-stone-300 hover:border-black transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer"
               >
                 <span>EXPLORE NEW ARRIVALS</span>
               </button>
             </div>
 
             {/* Direct WhatsApp Ordering strip */}
-            <div className="flex items-center gap-3 text-xs text-stone-600 pt-2 flex-wrap">
+            <div className="flex items-center gap-2 sm:gap-3 text-[11px] sm:text-xs text-stone-600 pt-1 sm:pt-2 flex-wrap">
               <button
                 onClick={() => openWhatsApp(settings.retailWhatsApp1, "Hello SG Leathers, I am interested in placing an order for genuine leather footwear.")}
-                className="flex items-center gap-1.5 font-bold text-emerald-700 hover:text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-lg transition-colors cursor-pointer"
+                className="flex items-center gap-1.5 font-bold text-emerald-700 hover:text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg transition-colors cursor-pointer"
               >
-                <MessageSquare className="w-3.5 h-3.5" />
+                <MessageSquare className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                 <span>WhatsApp: {settings.retailWhatsApp1}</span>
               </button>
 
@@ -95,39 +95,39 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onShowroom }) => {
                 onClick={onShowroom}
                 className="flex items-center gap-1.5 text-stone-600 hover:text-black font-semibold cursor-pointer"
               >
-                <MapPin className="w-3.5 h-3.5 text-black" />
+                <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-black" />
                 <span>Near Indian Overseas Bank, Periamet</span>
               </button>
             </div>
 
           </div>
 
-          {/* Right Floating Product Card matching reference image */}
-          <div className="lg:col-span-5 relative flex items-center justify-center">
+          {/* Right Floating Product Card */}
+          <div className="lg:col-span-5 relative flex items-center justify-center mt-2 lg:mt-0">
             
-            {/* Clean White Card container matching reference design */}
-            <div className="relative w-full max-w-md bg-white rounded-3xl p-6 sm:p-7 border border-stone-200 shadow-[0_20px_50px_rgba(0,0,0,0.08)] group">
+            {/* Clean White Card container */}
+            <div className="relative w-full max-w-sm sm:max-w-md bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-7 border border-stone-200 shadow-[0_10px_30px_rgba(0,0,0,0.06)] sm:shadow-[0_20px_50px_rgba(0,0,0,0.08)] group">
               
-              {/* Top Header of the card: BEST SELLER badge on left, Price on right */}
-              <div className="flex items-start justify-between mb-4">
-                <span className="bg-black text-white text-[11px] font-black uppercase tracking-wider px-3 py-1 rounded-md shadow-sm">
+              {/* Top Header of the card */}
+              <div className="flex items-start justify-between mb-3 sm:mb-4">
+                <span className="bg-black text-white text-[10px] sm:text-[11px] font-black uppercase tracking-wider px-2 sm:px-3 py-0.5 sm:py-1 rounded-md shadow-sm">
                   BEST SELLER
                 </span>
 
                 <div className="text-right">
-                  <div className="text-xl sm:text-2xl font-black text-black leading-none">
+                  <div className="text-lg sm:text-2xl font-black text-black leading-none">
                     ₹{heroProduct?.salePrice.toLocaleString('en-IN')}
                   </div>
-                  <div className="text-xs text-stone-400 line-through mt-0.5">
+                  <div className="text-[10px] sm:text-xs text-stone-400 line-through mt-0.5">
                     ₹{heroProduct?.price.toLocaleString('en-IN')}
                   </div>
                 </div>
               </div>
 
-              {/* Centered Floating Footwear Image on Clean White Canvas with Shadow */}
+              {/* Centered Floating Footwear Image */}
               <div 
                 onClick={() => heroProduct && setQuickViewProduct(heroProduct)}
-                className="relative aspect-square w-full rounded-2xl bg-stone-50 border border-stone-100 p-6 flex items-center justify-center cursor-pointer overflow-hidden"
+                className="relative aspect-square w-full rounded-xl sm:rounded-2xl bg-stone-50 border border-stone-100 p-3 sm:p-6 flex items-center justify-center cursor-pointer overflow-hidden"
               >
                 {/* Floating animated shoe image */}
                 <img

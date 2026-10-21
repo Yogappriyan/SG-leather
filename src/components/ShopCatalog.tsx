@@ -104,20 +104,20 @@ export const ShopCatalog: React.FC<ShopCatalogProps> = ({ onShowroomClick }) => 
   };
 
   return (
-    <section className="py-10 bg-white min-h-screen text-stone-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-6 sm:py-10 bg-white min-h-screen text-stone-900">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         
         {/* Top Header */}
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-8">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="text-xs uppercase font-black tracking-widest text-black">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <span className="text-[10px] sm:text-xs uppercase font-black tracking-widest text-black">
                 SG LEATHERS FACTORY CATALOG
               </span>
               <span className="text-xs text-stone-400">•</span>
-              <span className="text-xs text-stone-500 font-semibold">Showing {filteredProducts.length} Genuine Leather Goods</span>
+              <span className="text-[10px] sm:text-xs text-stone-500 font-semibold">{filteredProducts.length} items</span>
             </div>
-            <h1 className="font-brand text-3xl sm:text-4xl font-black text-black mt-1 capitalize">
+            <h1 className="font-brand text-2xl sm:text-4xl font-black text-black mt-1 capitalize leading-tight">
               {activeCategory === 'wishlist' 
                 ? 'Your Saved Wishlist' 
                 : activeCategory === 'flat-999-deals'
@@ -130,13 +130,13 @@ export const ShopCatalog: React.FC<ShopCatalogProps> = ({ onShowroomClick }) => 
 
           {/* Search bar inside Catalog */}
           <div className="relative w-full md:w-80">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400" />
             <input
               type="text"
               placeholder="Search leather style, boots, oxford..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-stone-50 border border-stone-200 focus:border-black rounded-xl pl-10 pr-8 py-2.5 text-xs text-black placeholder-stone-400 focus:outline-none shadow-sm"
+              className="w-full bg-stone-50 border border-stone-200 focus:border-black rounded-xl pl-9 pr-8 py-2 text-xs text-black placeholder-stone-400 focus:outline-none shadow-sm"
             />
             {searchQuery && (
               <button
@@ -150,10 +150,10 @@ export const ShopCatalog: React.FC<ShopCatalogProps> = ({ onShowroomClick }) => 
         </div>
 
         {/* Category Horizontal Pills */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-6 scrollbar-none">
+        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2.5 mb-4 sm:mb-6 scrollbar-none">
           <button
             onClick={() => setActiveCategory('all')}
-            className={`px-4 py-2 rounded-xl text-xs font-black whitespace-nowrap transition-all ${
+            className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs font-black whitespace-nowrap transition-all ${
               activeCategory === 'all' 
                 ? 'bg-black text-white shadow-sm' 
                 : 'bg-stone-100 text-stone-700 hover:text-black hover:bg-stone-200'
@@ -164,7 +164,7 @@ export const ShopCatalog: React.FC<ShopCatalogProps> = ({ onShowroomClick }) => 
 
           <button
             onClick={() => setActiveCategory('flat-999-deals')}
-            className={`px-4 py-2 rounded-xl text-xs font-black whitespace-nowrap transition-all flex items-center gap-1.5 ${
+            className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs font-black whitespace-nowrap transition-all flex items-center gap-1 ${
               activeCategory === 'flat-999-deals' 
                 ? 'bg-red-600 text-white shadow-sm' 
                 : 'bg-red-50 text-red-700 border border-red-200 hover:bg-red-100'
@@ -177,7 +177,7 @@ export const ShopCatalog: React.FC<ShopCatalogProps> = ({ onShowroomClick }) => 
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-4 py-2 rounded-xl text-xs font-black whitespace-nowrap transition-all ${
+              className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs font-black whitespace-nowrap transition-all ${
                 activeCategory === cat.id 
                   ? 'bg-black text-white shadow-sm' 
                   : 'bg-stone-100 text-stone-700 hover:text-black hover:bg-stone-200'
@@ -190,7 +190,7 @@ export const ShopCatalog: React.FC<ShopCatalogProps> = ({ onShowroomClick }) => 
           {wishlist.length > 0 && (
             <button
               onClick={() => setActiveCategory('wishlist')}
-              className={`px-4 py-2 rounded-xl text-xs font-black whitespace-nowrap transition-all flex items-center gap-1.5 ${
+              className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs font-black whitespace-nowrap transition-all flex items-center gap-1.5 ${
                 activeCategory === 'wishlist' 
                   ? 'bg-red-600 text-white shadow-sm' 
                   : 'bg-stone-100 text-red-600 hover:bg-red-50'
@@ -203,29 +203,29 @@ export const ShopCatalog: React.FC<ShopCatalogProps> = ({ onShowroomClick }) => 
         </div>
 
         {/* Filter Controls Bar */}
-        <div className="bg-stone-50 border border-stone-200 rounded-2xl p-4 mb-8 flex flex-wrap items-center justify-between gap-3 shadow-sm">
+        <div className="bg-stone-50 border border-stone-200 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 mb-4 sm:mb-8 flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 shadow-sm">
           
-          <div className="flex flex-wrap items-center gap-3 text-xs">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs">
             {/* Filter by Size */}
-            <div className="flex items-center gap-1.5">
-              <span className="text-stone-500 font-bold">Size:</span>
+            <div className="flex items-center gap-1">
+              <span className="text-stone-500 font-bold text-[11px] sm:text-xs">Size:</span>
               <select
                 value={selectedSize}
                 onChange={(e) => setSelectedSize(e.target.value)}
-                className="bg-white border border-stone-300 text-black rounded-lg px-2.5 py-1 text-xs font-semibold focus:outline-none focus:border-black"
+                className="bg-white border border-stone-300 text-black rounded-lg px-2 py-1 text-[11px] sm:text-xs font-semibold focus:outline-none focus:border-black"
               >
                 <option value="all">All Sizes</option>
-                {sizeOptions.map(s => <option key={s} value={s}>Size {s} (UK/India)</option>)}
+                {sizeOptions.map(s => <option key={s} value={s}>UK {s}</option>)}
               </select>
             </div>
 
             {/* Filter by Leather Material */}
-            <div className="flex items-center gap-1.5">
-              <span className="text-stone-500 font-bold">Leather:</span>
+            <div className="flex items-center gap-1">
+              <span className="text-stone-500 font-bold text-[11px] sm:text-xs">Leather:</span>
               <select
                 value={selectedLeather}
                 onChange={(e) => setSelectedLeather(e.target.value)}
-                className="bg-white border border-stone-300 text-black rounded-lg px-2.5 py-1 text-xs font-semibold focus:outline-none focus:border-black"
+                className="bg-white border border-stone-300 text-black rounded-lg px-2 py-1 text-[11px] sm:text-xs font-semibold focus:outline-none focus:border-black max-w-[130px] sm:max-w-none"
               >
                 <option value="all">All Genuine Leathers</option>
                 {leatherTypes.map(l => <option key={l} value={l}>{l}</option>)}
@@ -233,38 +233,38 @@ export const ShopCatalog: React.FC<ShopCatalogProps> = ({ onShowroomClick }) => 
             </div>
 
             {/* In stock toggle */}
-            <label className="flex items-center gap-1.5 cursor-pointer text-stone-700 font-medium">
+            <label className="flex items-center gap-1.5 cursor-pointer text-stone-700 font-medium text-[11px] sm:text-xs">
               <input
                 type="checkbox"
                 checked={onlyInStock}
                 onChange={(e) => setOnlyInStock(e.target.checked)}
                 className="rounded text-black focus:ring-0"
               />
-              <span>In Stock Only</span>
+              <span>In Stock</span>
             </label>
           </div>
 
           {/* Sort By Dropdown */}
-          <div className="flex items-center gap-2 text-xs">
-            <span className="text-stone-500 font-bold flex items-center gap-1">
-              <ArrowUpDown className="w-3.5 h-3.5 text-black" />
+          <div className="flex items-center gap-1.5 sm:gap-2 text-xs">
+            <span className="text-stone-500 font-bold flex items-center gap-1 text-[11px] sm:text-xs">
+              <ArrowUpDown className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-black" />
               <span>Sort:</span>
             </span>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as any)}
-              className="bg-white border border-stone-300 text-black rounded-lg px-3 py-1 text-xs font-bold focus:outline-none focus:border-black"
+              className="bg-white border border-stone-300 text-black rounded-lg px-2 sm:px-3 py-1 text-[11px] sm:text-xs font-bold focus:outline-none focus:border-black"
             >
-              <option value="featured">Featured Outlet Picks</option>
+              <option value="featured">Featured Picks</option>
               <option value="price-asc">Price: Low to High</option>
               <option value="price-desc">Price: High to Low</option>
-              <option value="discount">Biggest Discount %</option>
+              <option value="discount">Biggest Discount</option>
             </select>
 
             {(selectedLeather !== 'all' || selectedSize !== 'all' || onlyInStock || searchQuery) && (
               <button
                 onClick={clearAllFilters}
-                className="text-[11px] text-black hover:underline font-bold ml-2"
+                className="text-[10px] sm:text-[11px] text-black hover:underline font-bold ml-1 sm:ml-2"
               >
                 Reset
               </button>
@@ -273,25 +273,25 @@ export const ShopCatalog: React.FC<ShopCatalogProps> = ({ onShowroomClick }) => 
 
         </div>
 
-        {/* Product Cards Grid */}
+        {/* Product Cards Grid: 2 columns on mobile view */}
         {filteredProducts.length === 0 ? (
-          <div className="py-20 text-center flex flex-col items-center justify-center space-y-4">
-            <div className="w-16 h-16 rounded-full bg-stone-100 border border-stone-200 flex items-center justify-center text-stone-400">
-              <ShoppingBag className="w-8 h-8" />
+          <div className="py-16 text-center flex flex-col items-center justify-center space-y-3">
+            <div className="w-14 h-14 rounded-full bg-stone-100 border border-stone-200 flex items-center justify-center text-stone-400">
+              <ShoppingBag className="w-7 h-7" />
             </div>
-            <h3 className="font-brand text-xl font-black text-black">No Matching Genuine Leather Goods Found</h3>
+            <h3 className="font-brand text-lg sm:text-xl font-black text-black">No Matching Genuine Leather Goods Found</h3>
             <p className="text-xs text-stone-500 max-w-sm">
               Try adjusting your category, size, or material filters to explore more of our factory collection.
             </p>
             <button
               onClick={clearAllFilters}
-              className="px-6 py-2.5 rounded-xl bg-black hover:bg-stone-800 text-white font-black text-xs transition-colors"
+              className="px-5 py-2 rounded-xl bg-black hover:bg-stone-800 text-white font-black text-xs transition-colors"
             >
               Show All Factory Goods
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2.5 sm:gap-4 md:gap-6">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
